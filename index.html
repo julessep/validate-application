@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Banking Form</title>
+	<link rel="stylesheet" type="text/css" href="validation.css">
+</head>
+<body>
+	<form>
+		Applicant First Name:<br>
+		<input type="text" name="firstname"><br>
+		Applicant Middle Initial:<br> 
+		<input type="text" name="middle"><br>
+		Applicant Last Name:<br> 
+		<input type="text" name="lastname"><br>
+		Applicant Address:<br> 
+		<input type="text" name="address"><br>
+		Applicant Occupation:<br> 
+		<input type="text" name="occupation"><br>
+		Applicant Employer:<br>
+		<input type="text" name="employer"><br>
+		Employer Address:<br>
+		<input type="text" name="address"><br>
+	</form>
+	<br>
+	<form>
+		Type of Loan:<br>
+		<select name="loan">
+		  <option value="commercial">Commercial</option>
+		  <option value="realestate">Real Estate</option>
+		  <option value="personal">Personal</option>
+		  <option value="mortgage">Mortgage</option>
+		</select><br>
+
+		<p>Requested Amount of Loan:<br>
+		<input type="text" name="amount"><br></p>
+
+		<p>Loan Length:<br>
+		<input type="radio" name="length" value="5 years" checked> 5 years<br>
+	 	<input type="radio" name="length" value="15 years"> 15 years<br>
+	    <input type="radio" name="length" value="30 years"> 30 years<br></p>
+
+	    <p>Special Conditions:<br>
+	      <input type="checkbox" name="conditions"
+	       value="Bike"> I have a down payment<br>
+  		  <input type="checkbox" name="conditions" value="Car">Out-of-state-resident<br>
+  		  <input type="checkbox" name="conditions" value="Bike">Married<br>
+  		  <input type="checkbox" name="conditions" value="Bike">Loan will be co-signed<br></p>
+  		 
+
+  		  Additional Comments:<br>
+  		  <textarea name="comments" rows="10" cols="30">
+		  </textarea>
+		  </form>
+
+		  <form>
+		    E-mail:<br>
+ 			 <input type="email" name="email" required>
+		 
+		    <p>Telephone:<br>
+  			<input type="tel" name="usrtel" required></p>
+
+		    <p>Linkedin URL:<br>
+  			<input type="url" name="linkenin" required><br></p>
+
+		  </form>
+		  <p><button type="button">Submit</button></p>
+</body>
+</html>
